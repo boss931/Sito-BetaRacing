@@ -1,12 +1,13 @@
 body {
-	background-color: black;
+    background-color: black;
+    margin: 0;
 }
 
-header{
+header {
     background-color: #F9F9F9;
-    padding:20px;
-    text-align:center;
-	/* Attiva il layout flessibile */
+    padding: 20px;
+    text-align: center;
+    /* Attiva il layout flessibile */
     display: flex; 
     
     /* Allinea gli elementi verticalmente al centro */
@@ -19,79 +20,76 @@ header{
     padding-left: 50px;
     padding-right: 50px;
 }
-	
-h1   {
-	color: black;
-	font-family: verdana;
+    
+h1 {
+    color: black;
+    font-family: verdana;
 }
 
-h2	{
-	color: black;
-	font-family:verdana;
+h2 {
+    color: black;
+    font-family: verdana;
 }
 
-h3	{
-	margin: 0;
-	color: black;
-	font-family:verdana;
+h3 {
+    margin: 0;
+    color: black;
+    font-family: verdana;
 }
 
-p    {
-	color: red;
+p {
+    color: red;
 }
-
-
 
 .Moto {
-  background-color: #FFFFFF;
-  text-align:center;
-  width:300px;
-  margin: 10px; /* Aggiunge spazio tra le schede */
-  width: 300px;         /* Larghezza fissa */
-  flex-shrink: 0;       /* Impedisce al riquadro di rimpicciolirsi */
-  border: 2px solid #DDDDDD; /* Aggiunta del bordo: spessore, stile (solid) e colore (grigio chiaro) */
-  border-radius: 15px;   /* arrotonda gli angoli di 10 pixel */
-  overflow: hidden;  /* impedisce alle immagini di uscire dagli angoli arrotondati */
-  margin-bottom: 20px;  /* Spazio verticale tra le righe */
+    background-color: #FFFFFF;
+    text-align: center;
+    width: 300px;
+    margin: 10px; /* Aggiunge spazio tra le schede */
+    flex-shrink: 0; /* Impedisce al riquadro di rimpicciolirsi */
+    border: 2px solid #DDDDDD; /* Aggiunta del bordo: spessore, stile (solid) e colore (grigio chiaro) */
+    border-radius: 15px; /* arrotonda gli angoli di 10 pixel */
+    overflow: hidden; /* impedisce alle immagini di uscire dagli angoli arrotondati */
+    margin-bottom: 20px; /* Spazio verticale tra le righe */
 }
 
 .Moto:hover {
-  border-color: red; /* Il bordo diventa rosso Beta quando ci passi sopra */
-  cursor: pointer;   /* Il mouse diventa una manina */
-  transition: 0.3s;  /* Rende il cambio di colore fluido */
+    border-color: red; /* Il bordo diventa rosso Beta quando ci passi sopra */
+    cursor: pointer; /* Il mouse diventa una manina */
+    transition: 0.3s; /* Rende il cambio di colore fluido */
 }
 
-#Enduro{
-  background-color: #FFFFFF;
+#Enduro {
+    background-color: #FFFFFF;
 }
 
-#Motocross{
-  background-color: #FFFFFF;
+#Motocross {
+    background-color: #FFFFFF;
 }
 
-#Trial{
-  background-color: #FFFFFF;
+#Trial {
+    background-color: #FFFFFF;
 }
 
-.Modelli{
+.Modelli {
     display: flex;
-    flex-wrap: wrap;      /* Permette di andare a capo */
+    flex-wrap: wrap; /* Permette di andare a capo */
     justify-content: center; /* Centra i modelli se l'ultima riga ne ha meno di tre */
-    gap: 20px;            /* Crea spazio tra i riquadri senza impazzire con i margini */
+    gap: 20px; /* Crea spazio tra i riquadri senza impazzire con i margini */
 }
 
 .info_modello {
     background-color: #f2f2f2; /* Colore di fondo del rettangolo */
-    margin: 15px;               /* Distanza dai bordi della scheda esterna */
-    padding: 10px;              /* Spazio interno tra testo e bordi del rettangolo */
-    border-radius: 15px;        /* Arrotondamento dei bordi */
-    border: 1px solid #ddd;     /* Un leggero bordino per farlo risaltare */
+    margin: 15px; /* Distanza dai bordi della scheda esterna */
+    padding: 10px; /* Spazio interno tra testo e bordi del rettangolo */
+    border-radius: 15px; /* Arrotondamento dei bordi */
+    border: 1px solid #ddd; /* Un leggero bordino per farlo risaltare */
     transition: background-color 0.3s; /* Per l'effetto cliccabile futuro */
 }
 
 /* Sistemiamo i testi dentro la forma */
 .info_modello h2 {
-    margin: 5px 0;   /* Riduce lo spazio sopra e sotto il titolo */
+    margin: 5px 0; /* Riduce lo spazio sopra e sotto il titolo */
     font-size: 1.2em;
 }
 
@@ -101,30 +99,166 @@ p    {
 }
 
 @media (max-width: 800px) {
-	.Modelli {
-		flex-direction: column;
-	}
+    .Modelli {
+        flex-direction: column;
+    }
 }
 
 #contact {
     background-color: #FFFFFF; /* Sfondo bianco come le schede moto */
-    max-width: 800px;          /* Larghezza massima per non farlo troppo largo */
-    margin: 50px auto;         /* Centra il riquadro e dà spazio sopra/sotto */
-    padding: 30px;             /* Spazio interno */
-    border-radius: 20px;       /* Bordi arrotondati */
-    text-align: center;        /* Centra testi e immagini */
-    border: 3px solid red;     /* Un tocco di rosso Beta per il bordo */
+    max-width: 800px; /* Larghezza massima per non farlo troppo largo */
+    margin: 50px auto; /* Centra il riquadro e dà spazio sopra/sotto */
+    padding: 30px; /* Spazio interno */
+    border-radius: 20px; /* Bordi arrotondati */
+    text-align: center; /* Centra testi e immagini */
+    border: 3px solid red; /* Un tocco di rosso Beta per il bordo */
 }
 
 #contact h2 {
-    margin-top: 0;             /* Toglie lo spazio inutile in alto */
+    margin-top: 0; /* Toglie lo spazio inutile in alto */
     color: black;
-    text-transform: uppercase; /* Scritta in maiuscolo  */
+    text-transform: uppercase; /* Scritta in maiuscolo */
 }
 
 #contact p {
-    color: #333;               /* Grigio scuro per la leggibilità */
+    color: #333; /* Grigio scuro per la leggibilità */
     font-family: verdana;
     font-size: 1.1em;
-    line-height: 1.6;          /* Migliora la spaziatura tra le righe */
+    line-height: 1.6; /* Migliora la spaziatura tra le righe */
+}
+
+.classeEnduro {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto; /* Centra il contenuto nella pagina */
+}
+
+.DettaglioMoto {
+    display: flex; /* Mette immagine e testo uno a fianco all'altro */
+    align-items: center; /* Allinea verticalmente al centro */
+    margin-bottom: 40px;
+    gap: 20px; /* Spazio tra immagine e testo */
+}
+
+.DettaglioMoto img {
+    border-radius: 20px;          /* Arrotonda gli angoli dell'immagine */
+    border: 2px solid #333333;    /* Aggiunge un bordo grigio scuro sottile */
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2); /* Opzionale: un leggero alone rosso Beta */
+    transition: transform 0.3s;   /* Prepara l'effetto per il passaggio del mouse */
+}
+
+/* quando passi il mouse sulla foto, si ingrandisce leggermente */
+.DettaglioMoto img:hover {
+    transform: scale(1.03);       /* Ingrandisce del 3% */
+    border-color: red;            /* Il bordo diventa rosso Beta */
+}
+
+.testo_descrittivo {
+    text-align: left;
+}
+
+.testo_descrittivo h2 {
+    color: white; /* Titolo della moto bianco sul fondo nero */
+}
+
+.testo_descrittivo p {
+    color: #cccccc; /* Descrizione grigio chiaro per non stancare gli occhi */
+}
+
+/* Per il mobile: mette l'immagine sopra e il testo sotto */
+@media (max-width: 600px) {
+    .DettaglioMoto {
+        flex-direction: column;
+    }
+}
+
+/* Footer style */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    color: white;
+}
+
+.classeMotocross {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto; /* Il primo valore (50px) aggiunge spazio SOPRA e SOTTO, 'auto' centra a destra e sinistra */
+}
+
+.contenitore-bottone {
+    text-align: center; /* Centra il bottone nella pagina */
+    margin: 40px 0;    /* Distanza sopra e sotto il bottone */
+}
+
+.bottone-home {
+    background-color: red;    /* Rosso Beta */
+    color: white;             /* Testo bianco */
+    padding: 15px 30px;       /* Grandezza del bottone */
+    text-decoration: none;    /* Toglie la sottolineatura del link */
+    font-family: verdana;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;      /* Bordi arrotondati "a pillola" */
+    border: 2px solid transparent;
+    transition: 0.3s;         /* Animazione fluida */
+}
+
+.bottone-home:hover {
+    background-color: white;  /* Inverte i colori quando ci passi sopra */
+    color: red;
+    border: 2px solid red;    /* Aggiunge il bordo rosso */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6); /* Effetto luce rossa */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F9F9F9;
+    padding: 15px 50px;
+}
+
+.logo-titolo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.barra-navigazione {
+    background-color: #333333; 
+    padding: 10px 0;
+    border-bottom: 3px solid red; 
+}
+
+/* Toglie i pallini e resetta la lista */
+.barra-navigazione ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;         /* Mette in riga */
+    justify-content: center; /* Centra nel rettangolo */
+    gap: 30px;
+}
+
+.barra-navigazione {
+    background-color: #333333; /* Il rettangolo grigio scuro */
+    padding: 12px 0;
+    border-bottom: 3px solid red;
+    width: 100%;
+}
+
+.barra-navigazione li a {
+    color: white;
+    text-decoration: none;
+    font-family: verdana;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.barra-navigazione li a:hover {
+    color: red;
 }
