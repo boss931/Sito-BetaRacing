@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Beta racing</title>
+		<title>Beta Enduro</title>
 		<link rel="icon" type="image/x-icon" href="images/BetaMotor_logo.ico">
 		<link rel="stylesheet" href="styleBeta.css">
 		
@@ -8,53 +8,57 @@
 	</head>
 	<body>
 		<header>
-			<img src="images/BetaMotor_logo.jpg" alt="BetaMotor_logo" width="100">
-			<h1>Beta Racing</h1>
-			<h3>Nuovi modelli 2026</h3>
+			<div class="logo-titolo">
+				<img src="images/BetaMotor_logo.jpg" alt="BetaMotor_logo" width="100">
+				<h1 id="titolo-sito" onclick="salutoBeta()">Beta Enduro</h1> </div>
+			<h3>Modelli 2026</h3>
 		</header>
 
+		<nav class="barra-navigazione">
+			<ul>
+				<li><a href="BetaRacing.html">Home</a></li>
+				<li><a href="BetaEnduro.html">Enduro</a></li>
+				<li><a href="BetaMotocross.html">Motocross</a></li>
+				<li><a href="BetaTrial.html">Trial</a></li>
+				<li><a href="BetaAdventure.html">Adventure</a></li>
+				<li><a href="BetaSupermoto.html">Supermoto</a></li>
+			</ul>
+		</nav>
+
+
 		
-		<div class="Modelli">
-			<div id="Enduro" class="Moto">
-				<img src="images/Enduro.jpg" alt="Enduro" width="250">
-				<div class="info_modello">
-					<h2>Enduro</h2>
-					<p>Scopri la gamma!</p>
+		<div class="classeEnduro">
+			<div class="DettaglioMoto">
+				<img src="images/Enduro_RR_300.jpg" alt="Beta RR 300" width="400">
+				<div class="testo_descrittivo">
+					<h2>Beta RR 300 2T</h2>
+					<p>La regina dell'enduro estremo. Motore potente, coppia incredibile ai bassi regimi e una ciclistica rinnovata per il 2026. Ideale per chi cerca il massimo delle prestazioni nel tecnico.</p>
 				</div>
 			</div>
 			
-			<div id="Motocross" class="Moto">
-				<img src="images/Motocross.jpg" alt="Motocross" width="250">
-				<div class="info_modello">
-					<h2>Motocross</h2>
-					<p>Scopri la gamma!</p>
-				</div>
-			</div>
-			
-			<div id="Trial" class="Moto">
-				<img src="images/Trial.jpg" alt="Trial" width="262">
-				<div class="info_modello">
-					<h2>Trial</h2>
-					<p>Scopri la gamma!</p>
-				</div>
-			</div>
-			
-			<div id="Adventure" class="Moto">
-				<img src="images/Adventure.jpg" alt="Adventure" width="250">
-				<div class="info_modello">
-					<h2>Adventure</h2>
-					<p>Scopri la gamma!</p>
-				</div>
-			</div>
-			
-			<div id="Supermoto" class="Moto">
-				<img src="images/Supermoto.jpg" alt="Supermoto" width="250">
-				<div class="info_modello">
-					<h2>Supermoto</h2>
-					<p>Scopri la gamma!</p>
+			<div class="DettaglioMoto">
+				<img src="images/Enduro_RR_350.jpg" alt="Beta RR 350" width="400">
+					<div class="testo_descrittivo">
+						<h2>Beta RR 350 4T</h2>
+						<p>Perfetto equilibrio tra maneggevolezza e potenza. Il motore 4 tempi offre una trazione costante e una facilità di guida che la rende la scelta preferita per le lunghe giornate in mulattiera.</p>
 					</div>
 			</div>
+			
+			<div class="DettaglioMoto">
+				<img src="images/Enduro_RR_125.jpg" alt="Beta RR 125" width="400">
+				<div class="testo_descrittivo">
+					<h2>Beta RR 125 2T</h2>
+					<p>La piccola di casa Beta, ma con un carattere da grande. Leggerissima, agile e con un motore che ama girare alto. È la moto perfetta per i giovani talenti che vogliono scalare le classifiche dell'Enduro.</p>
+				</div>
+			</div>
+			
 		</div>
+		
+		
+		<div class="contenitore-bottone">
+			<a href="BetaRacing.html" class="bottone-home">Torna alla Home</a>
+		</div>
+		
 		
 		<section id="contact">
 				<h2>Contatti</h2>
@@ -64,7 +68,8 @@
 		
 		<footer>
 			<p> Copyright © 2026 - Sito di Alessandro Rossi </p>
-		<footer>
+		</footer>
 		
+		<script src="script.js"></script>
 	</body>
 </html>
