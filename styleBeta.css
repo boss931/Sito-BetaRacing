@@ -1,0 +1,130 @@
+body {
+	background-color: black;
+}
+
+header{
+    background-color: #F9F9F9;
+    padding:20px;
+    text-align:center;
+	/* Attiva il layout flessibile */
+    display: flex; 
+    
+    /* Allinea gli elementi verticalmente al centro */
+    align-items: center; 
+    
+    /* Crea spazio tra il logo (sinistra) e il testo (destra) */
+    justify-content: space-between; 
+    
+    /* Opzionale: aggiunge un po' di margine ai lati per non far toccare i bordi */
+    padding-left: 50px;
+    padding-right: 50px;
+}
+	
+h1   {
+	color: black;
+	font-family: verdana;
+}
+
+h2	{
+	color: black;
+	font-family:verdana;
+}
+
+h3	{
+	margin: 0;
+	color: black;
+	font-family:verdana;
+}
+
+p    {
+	color: red;
+}
+
+
+
+.Moto {
+  background-color: #FFFFFF;
+  text-align:center;
+  width:300px;
+  margin: 10px; /* Aggiunge spazio tra le schede */
+  width: 300px;         /* Larghezza fissa */
+  flex-shrink: 0;       /* Impedisce al riquadro di rimpicciolirsi */
+  border: 2px solid #DDDDDD; /* Aggiunta del bordo: spessore, stile (solid) e colore (grigio chiaro) */
+  border-radius: 15px;   /* arrotonda gli angoli di 10 pixel */
+  overflow: hidden;  /* impedisce alle immagini di uscire dagli angoli arrotondati */
+  margin-bottom: 20px;  /* Spazio verticale tra le righe */
+}
+
+.Moto:hover {
+  border-color: red; /* Il bordo diventa rosso Beta quando ci passi sopra */
+  cursor: pointer;   /* Il mouse diventa una manina */
+  transition: 0.3s;  /* Rende il cambio di colore fluido */
+}
+
+#Enduro{
+  background-color: #FFFFFF;
+}
+
+#Motocross{
+  background-color: #FFFFFF;
+}
+
+#Trial{
+  background-color: #FFFFFF;
+}
+
+.Modelli{
+    display: flex;
+    flex-wrap: wrap;      /* Permette di andare a capo */
+    justify-content: center; /* Centra i modelli se l'ultima riga ne ha meno di tre */
+    gap: 20px;            /* Crea spazio tra i riquadri senza impazzire con i margini */
+}
+
+.info_modello {
+    background-color: #f2f2f2; /* Colore di fondo del rettangolo */
+    margin: 15px;               /* Distanza dai bordi della scheda esterna */
+    padding: 10px;              /* Spazio interno tra testo e bordi del rettangolo */
+    border-radius: 15px;        /* Arrotondamento dei bordi */
+    border: 1px solid #ddd;     /* Un leggero bordino per farlo risaltare */
+    transition: background-color 0.3s; /* Per l'effetto cliccabile futuro */
+}
+
+/* Sistemiamo i testi dentro la forma */
+.info_modello h2 {
+    margin: 5px 0;   /* Riduce lo spazio sopra e sotto il titolo */
+    font-size: 1.2em;
+}
+
+.info_modello p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+	.Modelli {
+		flex-direction: column;
+	}
+}
+
+#contact {
+    background-color: #FFFFFF; /* Sfondo bianco come le schede moto */
+    max-width: 800px;          /* Larghezza massima per non farlo troppo largo */
+    margin: 50px auto;         /* Centra il riquadro e dà spazio sopra/sotto */
+    padding: 30px;             /* Spazio interno */
+    border-radius: 20px;       /* Bordi arrotondati */
+    text-align: center;        /* Centra testi e immagini */
+    border: 3px solid red;     /* Un tocco di rosso Beta per il bordo */
+}
+
+#contact h2 {
+    margin-top: 0;             /* Toglie lo spazio inutile in alto */
+    color: black;
+    text-transform: uppercase; /* Scritta in maiuscolo  */
+}
+
+#contact p {
+    color: #333;               /* Grigio scuro per la leggibilità */
+    font-family: verdana;
+    font-size: 1.1em;
+    line-height: 1.6;          /* Migliora la spaziatura tra le righe */
+}
