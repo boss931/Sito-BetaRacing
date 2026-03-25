@@ -8,13 +8,46 @@
 	</head>
 	<body>
 		<header>
-			<img src="images/BetaMotor_logo.jpg" alt="BetaMotor_logo" width="100">
-			<h1>Gamma Adventure</h1>
-			<h3>Nuovi modelli 2026</h3>
+			<div class="logo-titolo">
+				<img src="images/BetaMotor_logo.jpg" alt="BetaMotor_logo" width="100">
+				<h1 id="titolo-sito" onclick="salutoBeta()">Beta Adventure</h1> </div>
+			<h3>Modelli 2026</h3>
 		</header>
 
+		<nav class="barra-navigazione">
+			<ul>
+				<li><a href="BetaRacing.html">Home</a></li>
+				<li><a href="BetaEnduro.html">Enduro</a></li>
+				<li><a href="BetaMotocross.html">Motocross</a></li>
+				<li><a href="BetaTrial.html">Trial</a></li>
+				<li><a href="BetaAdventure.html">Adventure</a></li>
+				<li><a href="BetaSupermoto.html">Supermoto</a></li>
+			</ul>
+		</nav>
+
 		
-		
+		<div class="classeAdventure">
+			<div class="DettaglioMoto">
+				<img src="images/Alp_4.0.jpg" alt="Beta Alp 4.0" width="400">
+				<div class="testo_descrittivo">
+					<h2>Beta Alp 4.0</h2>
+					<p>L'icona del motoalpinismo si rinnova. La Alp 4.0 è la moto totale: agile in città e inarrestabile sulle strade bianche. Grazie alla sella bassa e al motore affidabile, è perfetta per chi vuole l'avventura senza complicazioni.</p>
+				</div>
+			</div>
+			
+			<div class="DettaglioMoto">
+				<img src="images/Alp_X.jpg" alt="Beta Alp X" width="400">
+					<div class="testo_descrittivo">
+						<h2>Beta Alp X</h2>
+						<p>L'anello di congiunzione tra Trial ed Enduro. Più compatta di una RR, la X offre una coppia incredibile e una facilità di guida che ti permette di superare ostacoli impossibili. La compagna ideale per le esplorazioni più tecniche.</p>
+					</div>
+			</div>
+			
+		</div>
+
+		<div class="contenitore-bottone">
+			<a href="BetaRacing.html" class="bottone-home">Torna alla Home</a>
+		</div>
 		
 		<section id="contact">
 				<h2>Contatti</h2>
@@ -24,7 +57,9 @@
 		
 		<footer>
 			<p> Copyright © 2026 - Sito di Alessandro Rossi </p>
-		<footer>
+		</footer>
+		
+		<script src="script.js"></script>
 		
 	</body>
 </html>
