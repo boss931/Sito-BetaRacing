@@ -3,18 +3,59 @@
 		<title>Beta Supermoto</title>
 		<link rel="icon" type="image/x-icon" href="images/BetaMotor_logo.ico">
 		<link rel="stylesheet" href="styleBeta.css">
-		
-
 	</head>
+	
 	<body>
 		<header>
-			<img src="images/BetaMotor_logo.jpg" alt="BetaMotor_logo" width="100">
-			<h1>Gamma Supermoto</h1>
-			<h3>Nuovi modelli 2026</h3>
+			<div class="logo-titolo">
+				<img src="images/BetaMotor_logo.jpg" alt="BetaMotor_logo" width="100">
+				<h1 id="titolo-sito" onclick="salutoBeta()">Beta Supermoto</h1> 
+			</div>
+			<h3>Modelli 2026</h3>
 		</header>
 
+		<nav class="barra-navigazione">
+			<ul>
+				<li><a href="BetaRacing.html">Home</a></li>
+				<li><a href="BetaEnduro.html">Enduro</a></li>
+				<li><a href="BetaMotocross.html">Motocross</a></li>
+				<li><a href="BetaTrial.html">Trial</a></li>
+				<li><a href="BetaAdventure.html">Adventure</a></li>
+				<li><a href="BetaSupermoto.html">Supermoto</a></li>
+			</ul>
+		</nav>
+
 		
+		<div class="classeSupermoto">
+			<div class="DettaglioMoto">
+				<img src="images/Supermoto_2T_50_track.jpg" alt="Beta 50 track" width="400">
+				<div class="testo_descrittivo">
+					<h2>Beta 50 2T Track</h2>
+					<p>Il top della gamma 50cc. Versione Track con forcelle a steli rovesciati, cerchi a raggi neri e una livrea aggressiva. Il motore 2 tempi offre scatti fulminei per il traffico cittadino e il divertimento puro.</p>
+				</div>
+			</div>
+			
+			<div class="DettaglioMoto">
+				<img src="images/Supermoto_4T_125_T.jpg" alt="Beta 125 4T T" width="400">
+					<div class="testo_descrittivo">
+						<h2>Beta 125 4T T</h2>
+						<p>La compagna ideale per tutti i giorni. Motore 4 tempi affidabile e dai consumi ridottissimi. Una sella comoda e una ciclistica bilanciata la rendono perfetta per chi usa la moto per andare a scuola o a lavoro.</p>
+					</div>
+			</div>
+			
+			<div class="DettaglioMoto">
+				<img src="images/Supermoto_4T_125_R.jpg" alt="Beta 125 4T R" width="400">
+				<div class="testo_descrittivo">
+					<h2>Beta 125 4T R</h2>
+					<p>L'anima racing applicata al 125 4 tempi. Componentistica di alto livello, frenata potenziata e un motore ottimizzato per dare il meglio nelle curve. Per chi non vuole scendere a compromessi in termini di stile e prestazioni.</p>
+				</div>
+			</div>
+			
+		</div>
 		
+		<div class="contenitore-bottone">
+			<a href="BetaRacing.html" class="bottone-home">Torna alla Home</a>
+		</div>
 		
 		<section id="contact">
 				<h2>Contatti</h2>
@@ -24,7 +65,9 @@
 		
 		<footer>
 			<p> Copyright © 2026 - Sito di Alessandro Rossi </p>
-		<footer>
+		</footer>
 		
+		<script src="script.js"></script>	
+
 	</body>
 </html>
