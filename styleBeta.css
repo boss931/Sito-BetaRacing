@@ -185,7 +185,7 @@ footer p {
 .classeMotocross {
     padding: 20px;
     max-width: 1000px;
-    margin: 0 auto; /* Il primo valore (50px) aggiunge spazio SOPRA e SOTTO, 'auto' centra a destra e sinistra */
+    margin: 0 auto; 
 }
 
 .contenitore-bottone {
@@ -261,4 +261,22 @@ header {
 
 .barra-navigazione li a:hover {
     color: red;
+}
+
+.classeTrial {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto; 
+}
+
+.classeSupermoto {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto; 
+}
+
+.classeAdventure {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto; 
 }
