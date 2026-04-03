@@ -280,3 +280,73 @@ header {
     max-width: 1000px;
     margin: 0 auto; 
 }
+
+.sezione-quiz {
+    background-color: #1a1a1a; /* Grigio quasi nero */
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid red;
+    color: white;
+    font-family: verdana;
+}
+
+.sezione-quiz h2 {
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.domanda {
+    background-color: #262626;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.domanda p {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.domanda label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 0;
+    transition: 0.2s;
+}
+
+.domanda label:hover {
+    color: red;
+}
+
+.area-risultato {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.bottone-quiz {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bottone-quiz:hover {
+    background-color: white;
+    color: red;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+#risultatoTesto {
+    margin-top: 20px;
+    font-size: 1.4em;
+}
