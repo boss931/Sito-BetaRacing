@@ -1,1 +1,68 @@
+<html lang="it">
+<head>
+    <title>Beta Racing Quiz</title>
+    <link rel="icon" type="image/x-icon" href="images/BetaMotor_logo.ico">
+    <link rel="stylesheet" href="styleBeta.css">
+</head>
+<body>
+    <header>
+        <div class="logo-titolo">
+            <img src="images/BetaMotor_logo.jpg" alt="BetaMotor_logo" width="100">
+            <h1>Beta Racing Quiz</h1>
+        </div>
+        <h3>Metti alla prova la tua passione</h3>
+    </header>
 
+    <nav class="barra-navigazione">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="BetaEnduro.html">Enduro</a></li>
+            <li><a href="BetaMotocross.html">Motocross</a></li>
+            <li><a href="BetaTrial.html">Trial</a></li>
+            <li><a href="BetaAdventure.html">Adventure</a></li>
+            <li><a href="BetaSupermoto.html">Supermoto</a></li>
+            <li><a href="BetaQuiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+
+    <div class="sezione-quiz">
+        <h2>Quanto ne sai sui modelli 2026?</h2>
+        
+        <div class="domanda">
+            <p>1. Quale modello è considerato la "Regina dell'Enduro"?</p>
+            <label><input type="radio" name="q1" value="err"> RR 125 2T</label><br>
+            <label><input type="radio" name="q1" value="corr"> RR 300 2T</label><br>
+            <label><input type="radio" name="q1" value="err"> Alp 4.0</label>
+        </div>
+
+        <div class="domanda">
+            <p>2. Quale moto è pensata per l'uso "Adventure"?</p>
+            <label><input type="radio" name="q2" value="err"> RX 450</label><br>
+            <label><input type="radio" name="q2" value="corr"> Alp X</label><br>
+            <label><input type="radio" name="q2" value="err"> Evo 300</label>
+        </div>
+
+        <div class="domanda">
+            <p>3. Qual è la cilindrata della Supermoto versione "Track"?</p>
+            <label><input type="radio" name="q3" value="corr"> 50cc</label><br>
+            <label><input type="radio" name="q3" value="err"> 125cc</label><br>
+            <label><input type="radio" name="q3" value="err"> 350cc</label>
+        </div>
+
+        <div class="area-risultato">
+            <button type="button" class="bottone-quiz" onclick="controllaQuiz()">Invia Risposte</button>
+            <h3 id="risultatoTesto"></h3>
+        </div>
+    </div>
+
+    <div class="contenitore-bottone">
+        <a href="index.html" class="bottone-home">Torna alla Home</a>
+    </div>
+
+    <footer>
+        <p>Copyright © 2026 - Sito di Alessandro Rossi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
